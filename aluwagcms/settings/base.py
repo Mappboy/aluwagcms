@@ -192,4 +192,4 @@ if 'SERVERTYPE' in os.environ and os.environ['SERVERTYPE'] == 'AWS Lambda':
     GEOS_LIBRARY_PATH = os.environ.get('GEOS_LIBRARY_PATH', '/opt/lib/libgeos_c.so.1')
     SPATIALITE_LIBRARY_PATH = os.environ.get('SPATIALITE_LIBRARY_PATH', '/opt/lib/mod_spatialite.so')
 else:
-    SPATIALITE_LIBRARY_PATH = '/usr/local/lib/mod_spatialite.dylib'
+    SPATIALITE_LIBRARY_PATH = '/usr/lib/x86_64-linux-gnu/mod_spatialite.so'
